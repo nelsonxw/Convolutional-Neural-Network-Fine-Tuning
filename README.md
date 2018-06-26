@@ -1,6 +1,6 @@
 # Project 3 Proposal
 
-### Team Members:
+### Project owner:
 
 + Nelson Wang
 
