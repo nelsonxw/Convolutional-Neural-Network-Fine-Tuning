@@ -1,0 +1,11 @@
+Flask==0.12.2
+jinja2==2.9.6
+pandas==0.20.3
+Werkzeug==0.12.2
+gunicorn==19.9.0
+h5py==2.7.0
+tensorflow==1.8.0
+Keras==2.2.0
+numpy==1.13.3
+
+
