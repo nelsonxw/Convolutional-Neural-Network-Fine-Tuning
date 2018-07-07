@@ -8,5 +8,9 @@ tensorflow==1.8.0
 Keras==2.2.0
 numpy==1.13.3
 Pillow==4.2.1
+certifi==2017.7.27.1
+click==6.7
+itsdangerous==0.24
+MarkupSafe==1.0
 
 
