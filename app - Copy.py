@@ -82,6 +82,4 @@ def upload_file():
 
 
 if __name__ == "__main__":
-    # get port number of Heroku.  If not specified, default to 5000
-    env_port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=env_port, debug=True)
+    app.run(debug=True)
