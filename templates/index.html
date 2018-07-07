@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daddy Knows Too</title>
+    <style>
+		body {
+		    background-image: url("static/Incredibles_daddy.jpg");
+		    background-repeat: no-repeat;
+		    background-position: left top;
+		    margin-left: 500px;
+		    background-size: 500px;
+		    background-attachment: fixed;
+		}
+	</style>
+	
+</head>
+<body>
+    <h1>
+	    <span style="color: hotpink;font-size: 30px;">Mommy Knows Best,</span>	
+	    <span style="color: red;font-size: 40px;">But Now Daddy Knows Too!</span>
+    </h1>
+    <h3>Select and upload a picture of flowers, and I may tell you the name of it...</h3>
+  	<form method=post enctype=multipart/form-data>
+    	<input type=file name=file accept="image/*">
+        <input type=submit value=Upload>
+    </form>
+    <br>
+    <div id="picture"></div>
+    <br>
+    <div id='finding'></div>    
+	
+	<script type="text/javascript">
+		var input = '{{result}}'
+		if (input != 'none') {
+			var flower = '{{result.flower}}'
+			var probability = '{{result.probability}}'
+		}
+		
+
+	</script>
+	<script src="static/index.js" type="text/javascript"></script>    
+</body>
+</html>
