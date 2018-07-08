@@ -19,7 +19,7 @@ MYDIR = os.path.dirname(__file__)
 #set age to 0 to refresh image saved in the tmp folder
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-mymodel = load_model('my_model_final.h5')
+
 graph = K.get_session().graph
 
 
@@ -62,6 +62,7 @@ def upload_file():
             flower_list = ['daisy','dandelion','rose','sunflower','tulip']
             
             global graph
+            mymodel = load_model('my_model_final.h5')
             with graph.as_default():
                 predictions = mymodel.predict(processed_image)
                 predict_index = np.argmax(predictions, axis=1)[0]
