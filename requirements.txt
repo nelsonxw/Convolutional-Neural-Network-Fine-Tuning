@@ -4,7 +4,7 @@ pandas==0.20.3
 Werkzeug==0.12.2
 gunicorn==19.9.0
 h5py==2.7.0
-
+scipy==0.19.1
 tensorflow==1.8.0
 Keras==2.2.0
 numpy==1.13.3
