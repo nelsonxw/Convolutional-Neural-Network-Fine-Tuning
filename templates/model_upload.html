@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Model Upload</title>
+    <style>
+		body {
+		    background-image: url("static/Incredibles_daddy.jpg");
+		    background-repeat: no-repeat;
+		    background-position: left top;
+		    margin-left: 500px;
+		    background-size: 500px;
+		    background-attachment: fixed;
+		}
+	</style>
+</head>
+<body>
+    <h3>Upload a new model.</h3>
+  	<form method=post enctype=multipart/form-data>
+    	<input type=file name=file accept=".h5">
+    	Secret code: <input type=password name='secret'>
+        <input type=submit value=Upload>
+    </form>
+    <br>
+    <br>
+    {{result}}
+    <br>
+    <a href="/">{{msg}}</a>
+    <br>
+</body>
+</html>
