@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daddy Knows Too</title>
     <style>
+		/*add background picture*/
 		body {
 		    background-image: url("static/Incredibles_daddy.jpg");
 		    background-repeat: no-repeat;
@@ -23,17 +24,22 @@
 	    <span style="color: red;font-size: 40px;">But Now Daddy Knows Too!</span>
     </h1>
     <h3>Select and upload a picture of flowers, and I may tell you the name of it...</h3>
+  	<!-- allow users to select and upload a picture -->
   	<form method=post enctype=multipart/form-data>
     	<input type=file name=file accept="image/*">
         <input type=submit value=Upload>
     </form>
     <br>
+    <!-- section to show picture once uploaded -->
     <div id="picture"></div>
     <br>
+    <!-- section to show wiki page of predicted flower -->
     <div id='finding'></div>    
 	
 	<script type="text/javascript">
+		/*get prediction result*/
 		var input = '{{result}}'
+		/*if there is a prediction result, extract predicted flower name and prediction confidence or probability*/
 		if (input != 'none') {
 			var flower = '{{result.flower}}'
 			var probability = '{{result.probability}}'
