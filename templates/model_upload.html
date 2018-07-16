@@ -20,6 +20,7 @@
     <h3>Upload a new model.</h3>
   	<form method=post enctype=multipart/form-data>
     	<input type=file name=file accept=".h5">
+    	<!-- add secret code so that only admin can upload model file -->
     	Secret code: <input type=password name='secret'>
         <input type=submit value=Upload>
     </form>
