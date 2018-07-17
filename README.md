@@ -61,6 +61,8 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
         ```python
         x = x / 255
         ```  
-        <img src="/screen%20shots/prediction_ImageNet_pictures.PNG" width="200">  
-        
+        <img src="/screen%20shots/prediction_ImageNet_pictures.PNG" width="200">          
         [code link](/10-test_my_model_ImageNet_images.ipynb)
+9. Used the saved model to predict flower names based on Kaggle's test dataset.  The prediction accuracy decreased across the species.
+    <img src="/screen%20shots/prediction_Kaggle_pictures.PNG" width="200">          
+        [code link]/11-test_my_model_Kaggle_images.ipynb)
