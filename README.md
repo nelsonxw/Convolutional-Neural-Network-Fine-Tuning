@@ -22,7 +22,12 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
     + Used one of the models (Xception) to verify the predicted flower names under each category and it totally mis-predicted the names.  
 [code link](https://github.com/nelsonxw/final_project/blob/master/2-verification_Xception.ipynb)  
 
-          
+2. Since all 10 models were trained with ImageNet pictures, decided to scraped pictures from ImageNet website and downloaded data for further validations.
+    + Installed library from https://github.com/tzutalin/ImageNet_Utils, tweaked the codes to work for Python 3.  
+    [code link](https://github.com/nelsonxw/Modified_ImageNet_Utils/tree/71287d9543cf939a62889c191aab7aea46876434)
+    + Used the ID of flowers to download pictures
+    + Used ImageNet images to predict flower names, and got same results.  
+    [code link](https://github.com/nelsonxw/final_project/blob/master/3-verification_ImageNet.ipynb)
 
-    
+
 
