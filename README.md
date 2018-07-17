@@ -64,7 +64,7 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
         <img src="/screen%20shots/prediction_ImageNet_pictures.PNG" width="200">  
         
         [code link](/10-test_my_model_ImageNet_images.ipynb)
-9. Used the saved model to predict flower names based on Kaggle's test dataset.  The prediction accuracy decreased across the species compared to the results from validation data.  This is expected result because the model tried hard to fit to the validation data when I was tweaking parameters in the fine-tuning process.  When predicting new data that the model had never seen before, its performance will likely deteriorate to some degree.  In addition, the quality of the test data may not be as good as the training / validation data, resulting in lower accuracy.  However, the overall prediction accuracy is still much better than the initial result in step 1.
+9. Used the saved model to predict flower names based on Kaggle's test dataset.  The prediction accuracy decreased across the species compared to the results from validation data.  This is expected result because the model tried hard to fit to the validation data when I was tweaking parameters in the fine-tuning process.  When predicting new data that the model had never seen before, its performance will likely deteriorate to some degree.  In addition, the quality of the test data may not be as good as the training / validation data, resulting in lower accuracy.  However, the overall prediction accuracy is still much better than the initial result in step 1.  
     <img src="/screen%20shots/prediction_Kaggle_pictures.PNG" width="200">  
     
     [code link](/11-test_my_model_Kaggle_images.ipynb)
