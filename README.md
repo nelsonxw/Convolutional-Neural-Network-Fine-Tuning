@@ -33,5 +33,4 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
     + Because it is very time consuming to run each epoch on my PC, I initially selected small training dataset with 50 pictures for each species to get a quick feel of the model.
     + When pre-processing the images, I used data augmentation function (rotate, shift, flip) to increase the amount of training data and reduce overfit.
     + I tweaked different parameters (# of layers to train, # of nodes in the new layer, drop out rate, batch size, optimizer, learning rate, # of epochs) and tried to improve prediction accuracy and reduce lose, but the best result I could get was only about 55%, with clear evidence of over fitting in the model as well.
-<img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/InceptionResNetV2_result1.PNG" width="400">
-<img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/InceptionResNetV2_result2.PNG" width="400">
+<img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/InceptionResNetV2_result1.PNG" width="200"> <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/InceptionResNetV2_result2.PNG" width="200">
