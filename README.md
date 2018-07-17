@@ -68,8 +68,8 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
     <img src="/screen%20shots/prediction_Kaggle_pictures.PNG" width="200">  
     
     [code link](/11-test_my_model_Kaggle_images.ipynb)
-    <img src="/screen%20shots/web_application.PNG" width="800">
+    
 10.  Used Flask to serve a web application where users can select a picture from local folders and upload to the web, where the fine-tuned model will predict the flower name, and return the wikipedia search result for this flower.  
-
-    + Tried to use Heroku to host the web.  But the saved model is over 100MB in size, and found out Heroku doesn't support git lfs (for large files).  Tried another approach by setting up a route (/model_upload) to allow users upload the model before uploading the pictures.  In this way, the saved model file doesn't have to be moved to Heroku directory.  Found out this approach will only work if there is a fast upload speed connection where the model upload can be completed within 30 seconds.  Heroku has a timeout limitation of 30 seconds, so if the upload takes longer than 30 seconds, the connection will drop.
+        + Tried to use Heroku to host the web.  But the saved model is over 100MB in size, and found out Heroku doesn't support git lfs (for large files).  Tried another approach by setting up a route (/model_upload) to allow users upload the model before uploading the pictures.  In this way, the saved model file doesn't have to be moved to Heroku directory.  Found out this approach will only work if there is a fast upload speed connection where the model upload can be completed within 30 seconds.  Heroku has a timeout limitation of 30 seconds, so if the upload takes longer than 30 seconds, the connection will drop.  
+        <img src="/screen%20shots/web_application.PNG" width="800">
     
