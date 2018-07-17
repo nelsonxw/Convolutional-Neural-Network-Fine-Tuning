@@ -51,5 +51,5 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
 7. I tested with differnet optimizer functions and settled on using RMSprop.  I kept 100 pictures per species as validation dataset, and used all the remaining pictures from ImageNet (over 1000 pictures per species) as the training data.  The prediction accuracy improved to 95% with reduction loss in the range of 0.2 to 0.3.  Created confusion matrix and it showed good precision and recall measurements for all flowers (daisy slightly lower than others).  
     <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_final_result1.PNG" width="300"> <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_final_result2.PNG" width="300">  
     <img src="/screen%20shots/VGG16_final_confusion_matrix.PNG" width="400">  
-    [code link](https://github.com/nelsonxw/final_project/blob/master/9-finetune_model_VGG16_final.ipynb)
+    [code link](/9-finetune_model_VGG16_final.ipynb)
     
