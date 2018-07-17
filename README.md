@@ -1,20 +1,23 @@
-# Project 3 Proposal
+# CNN Model Fine Tuning and Flower Classifications
 
-### Project owner:
+### Problem Statement:  
+What is an effective way to satify the curiosity of a five-year old kid?  When walking in a beautiful botanical garden with blooming flowers, how to utilize machine learning to help a human being learn the names of different flowers?
 
-+ Nelson Wang
+### Objective:
 
++ Compare 10 pre-trained Keras CNN models on their effectiveness in classifying flower types.
++ Pick the best pre-trained model and fine tune it to improve its prediction accuracy and achieve higher reductions in loss.
++ Create a simple web app where uses can upload pictures and find out the name of flowers
 
-### Topic: Fine tune a pre-trained CNN and use it to classify flowers
+### Dataset:
 
-+ Compare 10 pre-trained Keras CNN models on their effectiveness in reading pictures and classifying flower types
-+ Pick the best pre-trained model and fine tune it, in the hope of improving its prediction accuracy and reduction in loss.
++ Scrapped pictures of five species (daisy, dandelion, rose, sun flower and tulip) from ImageNet website for training and validation
++ Downloaded flower picture (same five species) dataset from Kaggle for testing
 
-### Dataset
+### Experiment Steps:
+1. Downloaded initial data from Kaggle (https://www.kaggle.com/alxmamaev/flowers-recognition/home) and split it into training dataset and test dataset.  With the test dataset, directly applied the pre-trained CNN models to compare and pick which one works best in predicting the flower types.  
+codes: https://github.com/nelsonxw/final_project/blob/master/1-pretrained_models_comparison.ipynb
+https://github.com/nelsonxw/final_project/blob/master/2-verification_Xception.ipynb
++ The result is very surprising.  All 10 modesl failed to predict dandelion, rose, sun flower and tulip, and scored 0 accuracy with these flowers.  The models scored between 70% and 80% on accuracy when predicitng daisy.
++ Used one of the models (Xception) to verify the predicted flower names under each category and it totally mis-predicted the names. 
 
-+ Scrapped pictures from ImageNet website for training and validation
-+ Downloaded flower picture dataset from Kaggle for testing
-
-### Additional thougths:
-
-+ If time allows, use Flask to serve a simple website where users can upload flower pictures and get flower name from the fine tuned model.  The website will also use the returned name to open wiki page with description of the flower, and open google image page with the flower selected.
