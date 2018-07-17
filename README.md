@@ -45,10 +45,11 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
 5. I tried to increase the learning rate by 3x in the hope of finding the global optimum quicker, but it ended up with more overfitting.  
     <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_worse_result1.PNG" width="300"> <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_worse_result2.PNG" width="300">  
     [code link](https://github.com/nelsonxw/final_project/blob/master/7-finetune_model_VGG16_2.ipynb)
-6. I kept the learning rate at 0.00001, and in order to further reduce overfitting, I increased the amount of training data.  Increased from 50 pictures per species to 450 pictures per species.  The prediction accuracy improved to 85% with lower reduction loss.  
+6. I kept the learning rate at 0.00001 (use small learning rate for fine tuning, otherwise it could over shoot and never get to the minimum gradient descent point).  In order to further reduce overfitting, I increased the amount of training data.  Increased from 50 pictures per species to 450 pictures per species.  The prediction accuracy improved to 88% with lower reduction loss.  
     <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_better_result1.PNG" width="300"> <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_better_result2.PNG" width="300">  
     [code link](https://github.com/nelsonxw/final_project/blob/master/8-finetune_model_VGG16_3.ipynb)
-    
-
-7. I tested with differnet optimizer functions and settled on using Adam.  I used 100 pictures per species as validation dataset, and used all the remaining pictures from ImageNet (over 1000 pictures per species) as the training data.  The prediction accuracy improved to 95%.
+7. I tested with differnet optimizer functions and settled on using RMSprop.  I kept 100 pictures per species as validation dataset, and used all the remaining pictures from ImageNet (over 1000 pictures per species) as the training data.  The prediction accuracy improved to 95%.  
+    <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_final_result1.PNG" width="300"> <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_final_result2.PNG" width="300">  
+    <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_final_confusion_matrix.PNG" width="400">  
+    [code link](https://github.com/nelsonxw/final_project/blob/master/9-finetune_model_VGG16_final.ipynb)
     
