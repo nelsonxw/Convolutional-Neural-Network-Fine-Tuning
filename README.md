@@ -35,9 +35,10 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
     + I tweaked different parameters (# of layers to train, # of nodes in the new layer, drop out rate, batch size, optimizer, learning rate, # of epochs) and tried to improve prediction accuracy and reduce lose.  The accuracy keeps going up and reduction loss keeps going down in the training dataset with each epoch, however, the best result I could get from the validation dataset was only about 55%, with clear evidence of overfitting in the model.  
 <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/InceptionResNetV2_result1.PNG" width="300"> <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/InceptionResNetV2_result2.PNG" width="300">
 4. After some research, I learned that reducing the complexity of the network may reduce overfitting problems.  With that in mind, I compared the 10 models in terms how many layers do they have (more layers indicate more complexity).  It turned out VGG16 has the least amount of layers, so I switched to fine tune VGG16 model.
-    + Complexity of each model
-    <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/compare_model_complexity.PNG" width="400">  
+    + Complexity of each model  
     [code link](https://github.com/nelsonxw/final_project/blob/master/5-select_simple_model.ipynb)
     + Improved accuracy and lower reduction loss
     <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_initial_result1.PNG" width="300"> <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_initial_result2.PNG" width="300">
     [code link](https://github.com/nelsonxw/final_project/blob/master/6-finetune_model_VGG16.ipynb)
+    <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/compare_model_complexity.PNG" width="400">  
+    
