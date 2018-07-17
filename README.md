@@ -36,6 +36,8 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
 <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/InceptionResNetV2_result1.PNG" width="300"> <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/InceptionResNetV2_result2.PNG" width="300">
 4. After some research, I learned that reducing the complexity of the network may reduce overfitting problems.  With that in mind, I compared the 10 models in terms how many layers do they have (more layers indicate more complexity).  It turned out VGG16 has the least amount of layers, so I switched to fine tune VGG16 model.
     + Complexity of each model
-    <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/compare_model_complexity.PNG" width="400">
+    <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/compare_model_complexity.PNG" width="400">  
+    [code link](https://github.com/nelsonxw/final_project/blob/master/5-select_simple_model.ipynb)
     + Improved accuracy and lower reduction loss
     <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_initial_result1.PNG" width="300"> <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/VGG16_initial_result2.PNG" width="300">
+    [code link](https://github.com/nelsonxw/final_project/blob/master/6-finetune_model_VGG16.ipynb)
