@@ -16,7 +16,7 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
 
 ### Experiment Steps:
 1. Downloaded initial data from Kaggle (https://www.kaggle.com/alxmamaev/flowers-recognition/home) and split it into training dataset and test dataset.  With the test dataset, directly applied the pre-trained CNN models to compare and pick which one works best in predicting the flower types.  
-[code link](https://github.com/nelsonxw/final_project/blob/master/1-pretrained_models_comparison.ipynb)
+[code link](https://github.com/nelsonxw/final_project/blob/master/1-pretrained_models_comparison.ipynb)  
 [code link](https://github.com/nelsonxw/final_project/blob/master/2-verification_Xception.ipynb)
 + The result is very surprising.  All 10 modesl failed to predict dandelion, rose, sun flower and tulip, and scored 0 accuracy with these flowers.  The models scored between 70% and 80% on accuracy when predicitng daisy.
 + Used one of the models (Xception) to verify the predicted flower names under each category and it totally mis-predicted the names. 
