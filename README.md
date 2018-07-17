@@ -61,5 +61,5 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
         ```python
         x = x / 255
         ```  
-        <img src="/screen%20shots/prediction_ImageNet_pictures.PNG" width="400">  
+        <img src="/screen%20shots/prediction_ImageNet_pictures.PNG" width="200">  
         [code link](/10-test_my_model_ImageNet_images.ipynb)
