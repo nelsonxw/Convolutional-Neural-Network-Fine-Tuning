@@ -20,4 +20,4 @@ codes: https://github.com/nelsonxw/final_project/blob/master/1-pretrained_models
 https://github.com/nelsonxw/final_project/blob/master/2-verification_Xception.ipynb
 + The result is very surprising.  All 10 modesl failed to predict dandelion, rose, sun flower and tulip, and scored 0 accuracy with these flowers.  The models scored between 70% and 80% on accuracy when predicitng daisy.
 + Used one of the models (Xception) to verify the predicted flower names under each category and it totally mis-predicted the names. 
-
+![]https://github.com/nelsonxw/final_project/blob/master/screen%20shots/pre-trained_model_comparison.PNG
