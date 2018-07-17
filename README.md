@@ -54,11 +54,12 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
     [code link](/9-finetune_model_VGG16_final.ipynb)
 8. I saved the fine-tuned model and used to predict flower names based on the validation data.  I was trying to verify that the model can truly deliver the high prediction accuracy.  
     + Initially I got really poor results, accuracy under 40%.  Being shocked, I knew there must be something wrong with my codes.  After careful examination, I realized that I was using the pre-processing function imported from VGG16 model.  Since it has been fine turned with my own pre-processing steps, the inconsistency in the pre-processing has caused my model to return incorrect predictions.
-    ```python
-    x = preprocess_input(x)
-    ```
+        ```python
+        x = preprocess_input(x)
+        ```
     + I corrected the code and used the same pre-processing steps I had when I fine-tuned VGG16 model.  The prediction results are aligned with expectations now.
-    ```python
-    x = x / 255
-    ```
-    [code link](/10-test_my_model_ImageNet_images.ipynb)
+        ```python
+        x = x / 255
+        ```  
+        <img src="/screen%20shots/prediction_ImageNet_pictures.PNG" width="400">  
+        [code link](/10-test_my_model_ImageNet_images.ipynb)
