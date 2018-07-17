@@ -19,6 +19,7 @@ What is an effective way to satify the curiosity of a five-year old kid?  When w
 [code link](https://github.com/nelsonxw/final_project/blob/master/1-pretrained_models_comparison.ipynb)  
 + The result is very surprising.  All 10 modesl failed to predict dandelion, rose, sun flower and tulip, and scored 0 accuracy with these flowers.  The models scored between 70% and 80% on accuracy when predicitng daisy.
 <img src="https://github.com/nelsonxw/final_project/blob/master/screen%20shots/pre-trained_model_comparison.PNG" width="400">  
+
 + Used one of the models (Xception) to verify the predicted flower names under each category and it totally mis-predicted the names.  
 [code link](https://github.com/nelsonxw/final_project/blob/master/2-verification_Xception.ipynb)
 
