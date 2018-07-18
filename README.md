@@ -25,7 +25,7 @@ Python, Pandas, HTML, CSS, JavaScript, TensorFlow, Keras, Scikit-learn, Matplotl
     + Used one of the models (Xception) to verify the predicted flower names under each category and it totally mis-predicted the names.  
 [code link](/2-verification_Xception.ipynb)  
 
-2. Since all 10 models were trained with ImageNet pictures, decided to scraped pictures from ImageNet website and downloaded data for further validations.
+2. Since all 10 models were trained with ImageNet pictures, decided to scrap pictures from ImageNet website and downloaded data for further validations.
     + Installed library from https://github.com/tzutalin/ImageNet_Utils, tweaked the codes to work for Python 3.  
     [code link](https://github.com/nelsonxw/Modified_ImageNet_Utils/tree/71287d9543cf939a62889c191aab7aea46876434)
     + Used the ID of flowers to download pictures
