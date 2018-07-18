@@ -55,7 +55,7 @@ Python, Pandas, HTML, CSS, JavaScript, TensorFlow, Keras, Scikit-learn, Matplotl
     <img src="/screen%20shots/VGG16_final_result1.PNG" width="300"> <img src="/screen%20shots/VGG16_final_result2.PNG" width="300">  
     <img src="/screen%20shots/VGG16_final_confusion_matrix.PNG" width="400">  
     [code link](/9-finetune_model_VGG16_final.ipynb)
-8. I saved the fine-tuned model and used to predict flower names based on the validation data.  I was trying to verify that the model can truly deliver the high prediction accuracy.  
+8. I saved the fine-tuned model and used it to predict flower names based on the validation data.  I was trying to verify that the model can truly deliver the high prediction accuracy.  
     + Initially I got really poor results, accuracy under 40%.  Being shocked, I knew there must be something wrong with my codes.  After careful examination, I realized that I was using the pre-processing function imported from VGG16 model.  Since it has been fine turned with my own pre-processing steps, the inconsistency in the pre-processing has caused my model to return incorrect predictions.
         ```python
         x = preprocess_input(x)
