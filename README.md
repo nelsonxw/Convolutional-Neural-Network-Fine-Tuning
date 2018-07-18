@@ -42,7 +42,7 @@ Python, Pandas, HTML, CSS, JavaScript, TensorFlow, Keras, Scikit-learn, Matplotl
         <img src="/screen%20shots/compare_model_complexity.PNG" width="400">  
         
         [code link](/5-select_simple_model.ipynb)
-    + Improved accuracy (75%) and lower reduction loss  
+    + Improved accuracy (75%) and reduction in loss  
         <img src="/screen%20shots/VGG16_initial_result1.PNG" width="300"> <img src="/screen%20shots/VGG16_initial_result2.PNG" width="300">  
         [code link](/6-finetune_model_VGG16.ipynb)
 5. I tried to increase the learning rate by 3x in the hope of finding the global optimum quicker, but it ended up with more overfitting.  
