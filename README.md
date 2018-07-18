@@ -78,7 +78,7 @@ Python, Pandas, HTML, CSS, JavaScript, TensorFlow, Keras, Scikit-learn, Matplotl
 ### Lessons Learned:
 + Start with a smaller set of data to get a quick feel of the model.
 + If you have a fast computer with GPU and enough time, use as much training data as you can and tweak the parameters as much as you can.
-+ To avoid overfitting, reduce the complexity of the model or algorithm may helps.
++ To avoid overfitting, reducing the complexity of the model or algorithm may helps.
 + Always validate the model results before celebrating for success.
 + It will be a good practice to split data into three parts: training data, validation data and test data.  As evidenced in this experiment, the results from validation data may be better than the actual performance it can generate in unseen test data.  The measurements from test data will be a more reliable indicator.
 + Recognize the limitations of supervised learning and classification algorithms.  If a model was not trained for a particular class, then it will fail to predict that particular class.  To truly satisfy the curiosity of a child and answer open ended questions (e.g. unlimited flower species), a supervised learning model may not be the best option.
