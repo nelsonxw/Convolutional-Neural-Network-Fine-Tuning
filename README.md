@@ -1,7 +1,7 @@
 # CNN Model Fine-tuning and Flower Classifications
 
 ### Problem Statement:  
-What is an effective way to satify the curiosity of a five-year old kid?  When walking in a beautiful botanical garden with blooming flowers, how to utilize machine learning to help a human being learn the names of different flowers?
+What is an effective way to satisfy the curiosity of a five-year old kid?  When walking in a beautiful botanical garden with blooming flowers, how to utilize machine learning to help a human being learn the names of different flowers?
 
 ### Objective:
 
